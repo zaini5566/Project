@@ -5,9 +5,9 @@ import Settings from '../SubComponents/Settings/Settings'
 
 const MainLayout = () => {
   return (
-    <div   className='border-2  w-full h-screen flex '>
+    <div   className='  w-full h-screen flex '>
         <Sidebar/>
-        <div className='border-2  w-full h-screen'>
+        <div className='  w-full h-screen'>
             <Routes>
                 <Route path='setting' element={<Settings/>}/>
             </Routes>
