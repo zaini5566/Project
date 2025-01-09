@@ -27,7 +27,7 @@ const TreatmentSelector = () => {
     const availableTreatments = allTreatments.filter(treatment => !selectedTreatments.some(st => st.id === treatment.id));
 
     return (
-        <div className=" mt-[150px] ml-[20px] w-[660px] border-2 p-1 bg-gray-200 rounded-2xl">
+        <div className=" mt-[150px] ml-[20px] w-[500px] border-2 p-1 bg-gray-200 rounded-2xl">
              <h1 className=' ml-[28px] text-[15px] font-bold'>Skin improvments</h1>
             <div className="mb-4 text-text-color bg-white rounded-2xl text-[12px] font-medium">
                 {selectedTreatments.map(treatment => (
@@ -47,8 +47,8 @@ const TreatmentSelector = () => {
                 <button  onClick={addTreatment} className="ml-2 flex justify-center items-center text-blue-500 border-2 border-gray-400  w-[48px] h-[48px]   rounded-2xl"><img src={plus} alt=""  width={24} height={24}/></button>
             </div>
             <div className="w-[687px] px-[12px] py-[8px] flex gap-2" >
-                <button className='w-[47%] h-[48px] rounded-2xl border-2 border-button-bg-color bg-white text-button-bg-color '>Cancel</button>
-                <button className='w-[47%] h-[48px] bg-button-bg-color text-white rounded-2xl  '>Save</button>
+                <button className='w-[35%] h-[48px] rounded-2xl border-2 border-button-bg-color bg-white text-button-bg-color '>Cancel</button>
+                <button className='w-[35%] h-[48px] bg-button-bg-color text-white rounded-2xl  '>Save</button>
                 
                
             </div>
